@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — HERMETH AGENT</title>
+<style>
+  body { max-width: 46rem; margin: 3rem auto; padding: 0 1.2rem; line-height: 1.7;
+         font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; color: #1a1a1a; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #ddd; padding: .5rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f6f6f6; }
+  code { background: #f3f3f3; padding: .1rem .3rem; border-radius: 3px; font-size: .88rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e5e5e5; color: #666; font-size: .9rem; }
+  a { color: #1a73e8; }
+</style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="sub">최종 업데이트: 2026년 10월 10일</p>
+
+  <p>
+    HERMETH AGENT(이하 "본 앱")는 <strong>단일 사용자 본인의 개인 자동화 도구</strong>입니다.
+    본 앱은 <strong>Google API Services User Data Policy</strong>(Google API 서비스 사용자 데이터 정책)와
+    그 <strong>제한적 사용(Limited Use) 요구사항</strong>을 준수합니다.
+    본 방침은 본 앱이 Google 사용자 데이터에 어떻게 접근·사용·보관·공유·삭제하는지 설명합니다.
+  </p>
+
+  <h2>1. 접근하는 Google 사용자 데이터</h2>
+  <p>본 앱은 사용자가 OAuth 동의 화면에서 명시적으로 승인한 범위에 한해서만 데이터에 접근합니다.</p>
+  <table>
+    <tr><th>범위(scope)</th><th>접근 대상</th><th>사용 목적</th></tr>
+    <tr><td><code>auth/drive</code></td><td>Google Drive 파일 및 폴더</td><td>본인 문서 조회·업로드·다운로드</td></tr>
+    <tr><td><code>auth/calendar</code></td><td>Google Calendar 일정</td><td>일정 조회 및 브리핑 생성</td></tr>
+    <tr><td><code>auth/gmail.readonly</code></td><td>Gmail 메일(읽기)</td><td>메일 검색·조회</td></tr>
+    <tr><td><code>auth/gmail.send</code></td><td>Gmail 발신</td><td>본인이 요청한 알림 메일 발송</td></tr>
+    <tr><td><code>auth/gmail.modify</code></td><td>Gmail 라벨·읽음 상태</td><td>메일 정리(라벨·읽음 처리)</td></tr>
+    <tr><td><code>auth/spreadsheets</code></td><td>Google Sheets</td><td>시트 읽기·쓰기</td></tr>
+    <tr><td><code>auth/documents</code></td><td>Google Docs</td><td>문서 읽기·작성</td></tr>
+    <tr><td><code>auth/contacts.readonly</code></td><td>Google 주소록(읽기)</td><td>연락처 조회</td></tr>
+  </table>
+
+  <h2>2. 데이터 사용 목적</h2>
+  <p>
+    접근한 데이터는 <strong>오직 사용자 본인의 요청을 수행하기 위해서만</strong> 사용됩니다.
+    광고, 프로파일링, 신용평가, 대출 심사, 또는 여타 목적으로 사용되지 않습니다.
+    본 앱은 사용자 데이터를 <strong>AI 모델 학습에 사용하지 않습니다.</strong>
+  </p>
+
+  <h2>3. 저장 및 보안</h2>
+  <ul>
+    <li>OAuth 자격증명(액세스·리프레시 토큰)은 <strong>사용자 본인의 PC에 로컬로만</strong> 저장됩니다.</li>
+    <li>토큰은 <code>google_token.json</code> 형태로 저장되며 접근이 제한된 로컬 경로에 위치합니다.</li>
+    <li>전송 구간은 HTTPS(TLS)로 보호됩니다.</li>
+    <li>Google 사용자 데이터를 판매하거나 데이터 브로커에게 제공하지 않습니다.</li>
+  </ul>
+
+  <h2>4. 제3자 공유</h2>
+  <p>
+    본 앱은 Google 사용자 데이터를 <strong>제3자와 공유하지 않습니다.</strong>
+    법령상 의무가 있는 경우 외에는 어떤 외부 주체에도 제공하지 않습니다.
+  </p>
+
+  <h2>5. 보관 및 삭제</h2>
+  <ul>
+    <li>데이터는 본인의 요청을 처리하는 동안에만 일시적으로 처리되며, 별도의 서버에 상시 보관하지 않습니다.</li>
+    <li>사용자는 <a href="https://myaccount.google.com/permissions">Google 계정 권한 페이지</a>에서 언제든지 본 앱의 접근 권한을 취소할 수 있습니다.</li>
+    <li>권한 취소 또는 로컬 토큰 파일 삭제 시, 본 앱은 더 이상 해당 데이터에 접근할 수 없습니다.</li>
+    <li>삭제를 요청하려면 아래 문의처로 연락해 주세요.</li>
+  </ul>
+
+  <h2>6. 아동</h2>
+  <p>본 앱은 아동을 대상으로 하지 않으며, 만 14세 미만 사용자의 데이터를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>7. 방침 변경</h2>
+  <p>본 방침이 변경되면 이 페이지에 갱신된 날짜와 함께 게시됩니다.</p>
+
+  <h2>8. 문의처</h2>
+  <p>개인정보 관련 문의: <a href="mailto:leeaj850222@gmail.com">leeaj850222@gmail.com</a></p>
+
+  <footer>
+    <a href="./index.html">← 앱 소개로 돌아가기</a>
+  </footer>
+</body>
+</html>
